@@ -56,9 +56,7 @@ class ConexionbtView extends GetView<ConexionbtController> {
                 Obx(() => DropdownButton(
                       items: controller.items,
                       onChanged: (value) {
-                        print("seleccionado" + value.toString());
                         controller.device.value = value;
-                        //controller.dispositivoSeleccionado = value;
                       },
                       value: controller.devicesList.isNotEmpty
                           ? controller.device.value
