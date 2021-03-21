@@ -14,21 +14,21 @@ class SideBar extends StatelessWidget {
               children: [
                 Center(
                   child: Icon(
-                    Icons.person,
+                    Icons.satellite_outlined,
                     color: Colors.white,
                     size: 50.0,
                   ),
                 ),
                 Center(
                   child: Text(
-                    "Locura",
+                    "Flutter + Arduino",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
                 Center(
                   child: Text(
-                    "Example",
+                    "Ejemplo bluetooth",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -65,28 +65,15 @@ class SideBar extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.person_outline),
-            title: Text('Encargado'),
-            onTap: () {},
-          ),
-          Column(
-            children: [
-              ListTile(
-                leading: Icon(Icons.border_color),
-                title: Text('Historial'),
-                onTap: () {},
-              ),
-            ],
-          ),
-          ListTile(
-            leading: Icon(Icons.update),
-            title: Text('Cambiar Usuario'),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.logout),
-            title: Text('Cerrar Sesión'),
-            onTap: () {},
+            leading: Icon(Icons.info),
+            title: Text('Acerca '),
+            onTap: () {
+              if (Get.currentRoute == Routes.CONEXIONBT) {
+                Get.back();
+              } else {
+                Get.toNamed(Routes.CONEXIONBT);
+              }
+            },
           ),
         ],
       ),
