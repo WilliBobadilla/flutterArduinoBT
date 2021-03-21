@@ -1,6 +1,6 @@
 # flutter_arduino_b_t :rocket:
 
-Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir datos.
+Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir datos, en este ejemplo se utilizo una fororesistencia para leer datos y enviar a la app, y para el ejemplo de control se uso un servo motor controlado desde la app con un slider.
 
 ## Instalación ( Android ) :dvd:
 
