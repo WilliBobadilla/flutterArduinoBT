@@ -153,7 +153,7 @@ class ConexionbtController extends GetxController {
     if (devicesList.isEmpty) {
       items.clear();
       items.add(DropdownMenuItem(
-        child: Text('NONE'),
+        child: Text("NONE"),
       ));
     } else {
       //recorremos todos los dispositivos y lo agregamos al dropDown Menu
