@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_arduino_b_t/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
-class SideBar extends StatelessWidget {
+class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -28,7 +28,7 @@ class SideBar extends StatelessWidget {
                 ),
                 Center(
                   child: Text(
-                    "Ejemplo bluetooth",
+                    "Ejemplo Bluetooth",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -43,8 +43,20 @@ class SideBar extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Inicio'),
+            leading: Icon(
+              Icons.home,
+              color: Get.currentRoute == Routes.HOME
+                  ? Colors.blue
+                  : Colors.grey[700],
+            ),
+            title: Text(
+              'Inicio',
+              style: TextStyle(
+                color: Get.currentRoute == Routes.HOME
+                    ? Colors.blue
+                    : Colors.grey[700],
+              ),
+            ),
             onTap: () {
               if (Get.currentRoute == Routes.HOME) {
                 Get.back();
@@ -54,19 +66,20 @@ class SideBar extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text('Conexíon'),
-            onTap: () {
-              if (Get.currentRoute == Routes.CONEXIONBT) {
-                Get.back();
-              } else {
-                Get.toNamed(Routes.CONEXIONBT);
-              }
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.info),
-            title: Text('Acerca '),
+            leading: Icon(
+              Icons.person,
+              color: Get.currentRoute == Routes.CONEXIONBT
+                  ? Colors.blue
+                  : Colors.grey[700],
+            ),
+            title: Text(
+              'Conexíon',
+              style: TextStyle(
+                color: Get.currentRoute == Routes.CONEXIONBT
+                    ? Colors.blue
+                    : Colors.grey[700],
+              ),
+            ),
             onTap: () {
               if (Get.currentRoute == Routes.CONEXIONBT) {
                 Get.back();

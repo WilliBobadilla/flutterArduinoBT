@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_arduino_b_t/app/modules/home/widgets/action_bar.dart';
-import 'package:flutter_arduino_b_t/app/modules/home/widgets/drawer_side.dart';
+import 'package:flutter_arduino_b_t/app/widgets/action_bar.dart';
+import 'package:flutter_arduino_b_t/app/widgets/custom_drawer.dart';
 
 import 'package:get/get.dart';
 
@@ -10,15 +10,15 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: SideBar(),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         actions: actionBar(),
-        title: Text('Inicio'),
+        title: Text("Inicio"),
         centerTitle: true,
       ),
       body: Center(
         child: Text(
-          'HomeView is working',
+          "HomeView is working",
           style: TextStyle(fontSize: 20),
         ),
       ),
