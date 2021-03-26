@@ -17,6 +17,7 @@ Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir d
 ## Librerías utilizadas :nut_and_bolt:
 
 - [get](https://pub.dev/packages/get)
+- []()
 
 ## Funcionamiento y uso :wrench:
 
