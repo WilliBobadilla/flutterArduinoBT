@@ -1,13 +1,12 @@
-
 /*
   Autor: Williams Bobadilla
   Fecha creacion: 25 marzo 2021
   Descripcion: software para la demostracion de la conexion de flutter con arduino, mediante
-  un modulo bluetooth, un sensor y un servomotor.
-
+  un modulo bluetooth, un sensor y un servomotor, en el Arduino Day.
 */
 
 #include <SoftwareSerial.h>
+
 
 
 SoftwareSerial BT(7, 8); // RX, TX
