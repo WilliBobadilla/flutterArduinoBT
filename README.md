@@ -35,9 +35,9 @@ Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir d
 #### Screen del proyecto en flutter(App)
 
 <p float="left">
-<img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/2.png"  width="25%" height="25%" />
+<img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/2.jpeg"  width="25%" height="25%" />
 <img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/3.jpeg"  width="25%" height="25%" />
-<img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/4.png"  width="25%" height="25%" />
+<img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/4.jpeg"  width="25%" height="25%" />
 </p>
 
 ## Aportes :muscle:
