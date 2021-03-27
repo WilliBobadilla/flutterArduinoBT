@@ -17,7 +17,7 @@ bool receiving = false;
 
 long tiempoActual;//para guardar el tiempo en todo momento
 long tiempoPrevio=0;
-const long intervalo=0;
+const long intervalo=2000;
 int lecturaSensor;
 
 void setup() {
@@ -33,6 +33,8 @@ void loop() {
    tiempoPrevio=tiempoActual;//actualizamos el tiempo previo
    lecturaSensor=analogRead(A0);
    escribir_datos(lecturaSensor);
+   Serial.print("escribiendo ");
+   Serial.println(lecturaSensor);
  }
   while (BT.available() > 0) {
     char data = BT.read();
