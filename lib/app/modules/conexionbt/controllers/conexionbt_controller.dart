@@ -124,7 +124,6 @@ class ConexionbtController extends GetxController {
             //homeController.cleanInput(); // clean data before read something new
             String datos = ascii.decode(data).toString();
             print("datos: " + datos);
-            //homeController.readedDataText.value = "";
             receiveDataToDecode(datos); //vamos a decodificar los datos
           });
         }).catchError((error) {
@@ -187,6 +186,7 @@ class ConexionbtController extends GetxController {
           .replaceAll("#", "")
           .replaceAll("*", ""); //limpiamos el dato y sacamos el # y *
       print("finalmente recibido es: " + received);
+      homeController.sensor.value = received;
       received = ""; //clean the data
 
     }

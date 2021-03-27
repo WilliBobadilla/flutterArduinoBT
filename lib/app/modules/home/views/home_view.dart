@@ -31,10 +31,12 @@ class HomeView extends GetView<HomeController> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "46",
-                  style: TextStyle(
-                    fontSize: 50.0,
+                Obx(
+                  () => Text(
+                    controller.sensor.value,
+                    style: TextStyle(
+                      fontSize: 50.0,
+                    ),
                   ),
                 ),
                 Container(
@@ -74,6 +76,8 @@ class HomeView extends GetView<HomeController> {
                 onChangeEnd: (value) {
                   //Enviar
                   print(value);
+                  controller.conexionbtController
+                      .sendMessageToBluetooth(value.toString());
                 },
               ),
             ),
