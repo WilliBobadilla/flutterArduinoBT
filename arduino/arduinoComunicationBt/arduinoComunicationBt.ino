@@ -28,7 +28,7 @@ void setup() {
 }
 
 void loop() {
- tiempoActual=milis();
+ tiempoActual=millis();
  if(tiempoActual-tiempoPrevio>=intervalo ){
    tiempoPrevio=tiempoActual;//actualizamos el tiempo previo
    lecturaSensor=analogRead(A0);
