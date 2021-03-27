@@ -23,7 +23,7 @@ int lecturaSensor;
 void setup() {
   Serial.begin(9600);
   BT.begin(9600);
-  servo.attach(4);//indicamos que esta en la patita 4 
+  servo.attach(3);//indicamos que esta en la patita 4 
   servo.write(0);//comenzamos en el angulo 0
 }
 
