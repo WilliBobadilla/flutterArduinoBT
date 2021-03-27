@@ -40,6 +40,13 @@ Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir d
 <img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/4.jpeg"  width="25%" height="25%" />
 </p>
 
+## Video
+
+ <video width="320" height="240" controls>
+  <source src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/video/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Aportes :muscle:
 
 Si quieres aportar, haz un fork de la repo, luego abre tu rama, una vez que hiciste todo lo que quieres agregar, y haz un pull request! :smile:
