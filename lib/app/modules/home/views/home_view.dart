@@ -19,43 +19,67 @@ class HomeView extends GetView<HomeController> {
         centerTitle: true,
       ),
       body: Center(
-          child: Column(
-        children: [
-          SizedBox(
-            height: 20.0,
-          ),
-          Text(
-            "Sensor de luz",
-            style: TextStyle(
-              fontSize: 25.0,
-            ),
-          ),
-          SizedBox(
-            height: 10.0,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "46",
-                style: TextStyle(
-                  fontSize: 50.0,
-                ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text(
+              "Sensor de luz",
+              style: TextStyle(
+                fontSize: 40.0,
               ),
-              Container(
-                alignment: Alignment.topLeft,
-                height: 50.0,
-                child: Text(
-                  "LUX",
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "46",
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 50.0,
                   ),
                 ),
-              )
-            ],
-          )
-        ],
-      )),
+                Container(
+                  alignment: Alignment.topLeft,
+                  height: 50.0,
+                  child: Text(
+                    "LUX",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
+                  ),
+                )
+              ],
+            ),
+            Text(
+              "Control Servo Motor",
+              style: TextStyle(
+                fontSize: 40.0,
+              ),
+            ),
+            Obx(
+              () => Text(
+                controller.valorSlider.value.toStringAsFixed(2) + " º",
+                style: TextStyle(
+                  fontSize: 35.0,
+                ),
+              ),
+            ),
+            Obx(
+              () => Slider(
+                value: controller.valorSlider.value,
+                min: 0,
+                max: 180,
+                onChanged: (value) {
+                  controller.valorSlider.value = value;
+                },
+                onChangeEnd: (value) {
+                  //Enviar
+                  print(value);
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
