@@ -27,18 +27,13 @@ void setup() {
   servo.write(0);//comenzamos en el angulo 0
 }
 
-
 void loop() {
-
-
+ tiempoActual=milis();
  if(tiempoActual-tiempoPrevio>=intervalo ){
    tiempoPrevio=tiempoActual;//actualizamos el tiempo previo
    lecturaSensor=analogRead(A0);
    escribir_datos(lecturaSensor);
  }
-
-
-
   while (BT.available() > 0) {
     char data = BT.read();
     received = received + data;
