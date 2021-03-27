@@ -23,6 +23,12 @@ Proyecto para demostrar el uso de bluetooth con arduino, para enviar y recibir d
 
 ## Screenshoots :iphone:
 
+#### Circuito de Arduino
+
+<p float="left">
+<img src="https://github.com/WilliBobadilla/flutterArduinoBT/blob/master/screenshoots/1.png"  width="25%" height="35%" />
+</p>
+
 ## Aportes :muscle:
 
 Si quieres aportar, haz un fork de la repo, luego abre tu rama, una vez que hiciste todo lo que quieres agregar, y haz un pull request! :smile:
