@@ -15,7 +15,7 @@ class HomeView extends GetView<HomeController> {
       drawer: CustomDrawer(),
       appBar: AppBar(
         actions: actionBar(),
-        title: Text("Inicio"),
+        title: Text("Arduino Day"),
         centerTitle: true,
       ),
       body: Center(

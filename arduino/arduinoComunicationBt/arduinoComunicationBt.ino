@@ -17,13 +17,13 @@ bool receiving = false;
 
 long tiempoActual;//para guardar el tiempo en todo momento
 long tiempoPrevio=0;
-const long intervalo=2000;
+const long intervalo=2000;//en ms
 int lecturaSensor;
 
 void setup() {
   Serial.begin(9600);
   BT.begin(9600);
-  servo.attach(3);//indicamos que esta en la patita 4 
+  servo.attach(3);//indicamos que esta en la patita 3 
   servo.write(0);//comenzamos en el angulo 0
 }
 

@@ -172,6 +172,7 @@ class ConexionbtController extends GetxController {
   ///output: String dataReceived
   void receiveDataToDecode(String datos) {
     // a "#" is for the start and a "*" at the final to end the reception
+    //#220*
     if (datos.contains("#") && !recieving) {
       // to start the reception
       recieving = true;
